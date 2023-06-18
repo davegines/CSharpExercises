@@ -59,7 +59,7 @@ public class ArrivalTimePrediction
 
     foreach (var rule in rules)
     {
-      if (rule is not null && rule.ShouldRun(travelDefinition))
+      if (rule is not null && rule.IsApplicable(travelDefinition))
       {
         rule.Apply(travelDefinition);
       }
