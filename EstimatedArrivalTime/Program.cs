@@ -1,3 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using EstimatedArrivalTime.RulesEngineSolution;
 
-Console.WriteLine("Hello, World!");
+ArrivalTimePrediction arrivalTimePrediction = new();
+arrivalTimePrediction.Run();
